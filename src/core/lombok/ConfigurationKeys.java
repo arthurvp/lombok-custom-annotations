@@ -1,16 +1,16 @@
 /*
  * Copyright (C) 2013-2018 The Project Lombok Authors.
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -491,7 +491,16 @@ public class ConfigurationKeys {
 	 * If set, <em>any</em> usage of {@code @FieldDefaults} results in a warning / error.
 	 */
 	public static final ConfigurationKey<FlagUsageType> FIELD_DEFAULTS_FLAG_USAGE = new ConfigurationKey<FlagUsageType>("lombok.fieldDefaults.flagUsage", "Emit a warning or error if @FieldDefaults is used.") {};
-	
+
+	// ----- AllArgsFinal -----
+
+	/**
+	 * lombok configuration: {@code lombok.allArgsFinal.flagUsage} = {@code WARNING} | {@code ERROR}.
+	 *
+	 * If set, <em>any</em> usage of {@code @AllArgsFinal} results in a warning / error.
+	 */
+	public static final ConfigurationKey<FlagUsageType> ALL_ARGS_FINAL_FLAG_USAGE = new ConfigurationKey<FlagUsageType>("lombok.allArgsFinal.flagUsage", "Emit a warning or error if @AllArgsFinal is used.") {};
+
 	// ----- Helper -----
 	
 	/**
